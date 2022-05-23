@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgr.qrc">
+    <normaloff>:/.ico/favicon.ico</normaloff>:/.ico/favicon.ico</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,8,0,2,8,0,0,0">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>姓名</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>身份证号码</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>18</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>职位</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,8,0,2,8">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>入职时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>签订年限</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,8,0,2,8">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>合同时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_2">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>结束合同时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_3">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,8,0,2,8">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>离职原因</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox">
+          <property name="sizeIncrement">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="maxVisibleItems">
+           <number>15</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>个人原因</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自身学习与发展</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工作家庭无法平衡</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工作岗位与预想不同</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工作地点和环境</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>公司福利不好</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工作时间太长\压力大</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>管理方式</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>提出出离职日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_4">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,8,0,2,8">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>决定离职日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_5">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>盖章日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_6">
+          <property name="displayFormat">
+           <string>yyyy-M-d</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>提交</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="imgr.qrc"/>
+ </resources>
+ <connections/>
+</ui>
